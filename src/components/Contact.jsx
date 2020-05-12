@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 class Contact extends React.Component {
   render() {
-    return (<div />);
+    return <div />;
   }
 }
 
