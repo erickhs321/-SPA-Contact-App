@@ -1,29 +1,18 @@
 import React from "react";
-import ContactCell from "./ContactCell";
-
 class Contact extends React.Component {
   render() {
-    const defaultShowInfos = [
-      "avatar",
-      "name",
-      "phone",
-      "country",
-      "admissionDate",
-      "company",
-      "department",
-    ];
-    const { data, showInfos = defaultShowInfos } = this.props;
-
+    const { data } = this.props;
     return (
-      <article className="contact">
-        {showInfos.map((info, i) => {
-          return (
-            <ContactCell
-              avatar={i === 0}
-              data={data[info] || data.columns[i]}
-            />
-          );
-        })}
+      <article className="contact" data-testid="contact">
+        <span className="contact__avatar">
+          <img src={data.avatar}></img>
+        </span>
+        <span className="contact__data">{data.name}</span>
+        <span className="contact__data">{data.phone}</span>
+        <span className="contact__data">{data.country}</span>
+        <span className="contact__data">{data.admissionDate}</span>
+        <span className="contact__data">{data.company}</span>
+        <span className="contact__data">{data.department}</span>
       </article>
     );
   }

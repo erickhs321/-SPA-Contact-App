@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="4" failures="4" time="3.316">
+  <testsuite name="Contacts APP" errors="0" failures="4" skipped="0" timestamp="2020-05-13T07:23:51" time="2.58" tests="4">
+    <testcase classname="Contacts APP Should render Contact component" name="Contacts APP Should render Contact component" time="0.026">
+      <failure>TypeError: Cannot read property &apos;0&apos; of undefined
+    at map (/home/erick/codenation/react-13/src/components/Contact.jsx:23:35)
+    at Array.map (&lt;anonymous&gt;)
+    at Contact.render (/home/erick/codenation/react-13/src/components/Contact.jsx:19:20)
+    at finishClassComponent (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:17160:31)
+    at updateClassComponent (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:17110:24)
+    at beginWork (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:18620:16)
+    at HTMLUnknownElement.callCallback (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:188:14)
+    at invokeEventListeners (/home/erick/codenation/react-13/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:193:27)
+    at HTMLUnknownElementImpl._dispatch (/home/erick/codenation/react-13/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:119:9)
+    at HTMLUnknownElementImpl.dispatchEvent (/home/erick/codenation/react-13/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:82:17)
+    at HTMLUnknownElementImpl.dispatchEvent (/home/erick/codenation/react-13/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/living/nodes/HTMLElement-impl.js:30:27)
+    at HTMLUnknownElement.dispatchEvent (/home/erick/codenation/react-13/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:157:21)
+    at Object.invokeGuardedCallbackDev (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:237:16)
+    at invokeGuardedCallback (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:292:31)
+    at beginWork$1 (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:23203:7)
+    at performUnitOfWork (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:22157:12)
+    at workLoopSync (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:22130:22)
+    at performSyncWorkOnRoot (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:21756:9)
+    at scheduleUpdateOnFiber (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:21188:7)
+    at updateContainer (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:24373:3)
+    at /home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:24758:7
+    at unbatchedUpdates (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:21903:12)
+    at legacyRenderSubtreeIntoContainer (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:24757:5)
+    at Object.render (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:24840:10)
+    at /home/erick/codenation/react-13/node_modules/@testing-library/react/dist/pure.js:86:25
+    at batchedUpdates$1 (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:21856:12)
+    at act (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom-test-utils.development.js:929:14)
+    at render (/home/erick/codenation/react-13/node_modules/@testing-library/react/dist/pure.js:82:26)
+    at Object.&lt;anonymous&gt; (/home/erick/codenation/react-13/src/__tests__/submit.test.js:21:27)
+    at Object.asyncJestTest (/home/erick/codenation/react-13/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /home/erick/codenation/react-13/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/erick/codenation/react-13/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/erick/codenation/react-13/node_modules/jest-jasmine2/build/queueRunner.js:73:41
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)</failure>
+    </testcase>
+    <testcase classname="Contacts APP Should render Contacts component" name="Contacts APP Should render Contacts component" time="0.007">
+      <failure>TypeError: Cannot read property &apos;map&apos; of undefined
+    at Contacts.render (/home/erick/codenation/react-13/src/components/Contacts.jsx:15:26)
+    at finishClassComponent (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:17160:31)
+    at updateClassComponent (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:17110:24)
+    at beginWork (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:18620:16)
+    at HTMLUnknownElement.callCallback (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:188:14)
+    at invokeEventListeners (/home/erick/codenation/react-13/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:193:27)
+    at HTMLUnknownElementImpl._dispatch (/home/erick/codenation/react-13/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:119:9)
+    at HTMLUnknownElementImpl.dispatchEvent (/home/erick/codenation/react-13/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:82:17)
+    at HTMLUnknownElementImpl.dispatchEvent (/home/erick/codenation/react-13/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/living/nodes/HTMLElement-impl.js:30:27)
+    at HTMLUnknownElement.dispatchEvent (/home/erick/codenation/react-13/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:157:21)
+    at Object.invokeGuardedCallbackDev (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:237:16)
+    at invokeGuardedCallback (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:292:31)
+    at beginWork$1 (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:23203:7)
+    at performUnitOfWork (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:22157:12)
+    at workLoopSync (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:22130:22)
+    at performSyncWorkOnRoot (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:21756:9)
+    at scheduleUpdateOnFiber (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:21188:7)
+    at updateContainer (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:24373:3)
+    at /home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:24758:7
+    at unbatchedUpdates (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:21903:12)
+    at legacyRenderSubtreeIntoContainer (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:24757:5)
+    at Object.render (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:24840:10)
+    at /home/erick/codenation/react-13/node_modules/@testing-library/react/dist/pure.js:86:25
+    at batchedUpdates$1 (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:21856:12)
+    at act (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom-test-utils.development.js:929:14)
+    at render (/home/erick/codenation/react-13/node_modules/@testing-library/react/dist/pure.js:82:26)
+    at Object.&lt;anonymous&gt; (/home/erick/codenation/react-13/src/__tests__/submit.test.js:29:27)
+    at Object.asyncJestTest (/home/erick/codenation/react-13/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /home/erick/codenation/react-13/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/erick/codenation/react-13/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/erick/codenation/react-13/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname="Contacts APP Should render Filters component" name="Contacts APP Should render Filters component" time="0.006">
+      <failure>TypeError: Cannot read property &apos;map&apos; of undefined
+    at Filters.render (/home/erick/codenation/react-13/src/components/Filters.jsx:24:33)
+    at finishClassComponent (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:17160:31)
+    at updateClassComponent (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:17110:24)
+    at beginWork (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:18620:16)
+    at HTMLUnknownElement.callCallback (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:188:14)
+    at invokeEventListeners (/home/erick/codenation/react-13/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:193:27)
+    at HTMLUnknownElementImpl._dispatch (/home/erick/codenation/react-13/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:119:9)
+    at HTMLUnknownElementImpl.dispatchEvent (/home/erick/codenation/react-13/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:82:17)
+    at HTMLUnknownElementImpl.dispatchEvent (/home/erick/codenation/react-13/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/living/nodes/HTMLElement-impl.js:30:27)
+    at HTMLUnknownElement.dispatchEvent (/home/erick/codenation/react-13/node_modules/jest-environment-jsdom/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:157:21)
+    at Object.invokeGuardedCallbackDev (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:237:16)
+    at invokeGuardedCallback (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:292:31)
+    at beginWork$1 (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:23203:7)
+    at performUnitOfWork (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:22157:12)
+    at workLoopSync (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:22130:22)
+    at performSyncWorkOnRoot (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:21756:9)
+    at scheduleUpdateOnFiber (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:21188:7)
+    at updateContainer (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:24373:3)
+    at /home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:24758:7
+    at unbatchedUpdates (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:21903:12)
+    at legacyRenderSubtreeIntoContainer (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:24757:5)
+    at Object.render (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:24840:10)
+    at /home/erick/codenation/react-13/node_modules/@testing-library/react/dist/pure.js:86:25
+    at batchedUpdates$1 (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom.development.js:21856:12)
+    at act (/home/erick/codenation/react-13/node_modules/react-dom/cjs/react-dom-test-utils.development.js:929:14)
+    at render (/home/erick/codenation/react-13/node_modules/@testing-library/react/dist/pure.js:82:26)
+    at Object.&lt;anonymous&gt; (/home/erick/codenation/react-13/src/__tests__/submit.test.js:37:27)
+    at Object.asyncJestTest (/home/erick/codenation/react-13/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /home/erick/codenation/react-13/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/erick/codenation/react-13/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/erick/codenation/react-13/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname="Contacts APP Should render Topbar component" name="Contacts APP Should render Topbar component" time="0.012">
+      <failure>Error: Unable to find an element by: [data-testid=&quot;topbar&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;header
+      class=&quot;topbar&quot;
+    &gt;
+      &lt;div
+        class=&quot;container&quot;
+      &gt;
+        &lt;a
+          class=&quot;topbar__logo&quot;
+          href=&quot;/&quot;
+        /&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/home/erick/codenation/react-13/node_modules/@testing-library/dom/dist/config.js:34:12)
+    at /home/erick/codenation/react-13/node_modules/@testing-library/dom/dist/query-helpers.js:71:38
+    at getByTestId (/home/erick/codenation/react-13/node_modules/@testing-library/dom/dist/query-helpers.js:54:17)
+    at Object.&lt;anonymous&gt; (/home/erick/codenation/react-13/src/__tests__/submit.test.js:46:21)
+    at Object.asyncJestTest (/home/erick/codenation/react-13/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /home/erick/codenation/react-13/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/erick/codenation/react-13/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/erick/codenation/react-13/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
