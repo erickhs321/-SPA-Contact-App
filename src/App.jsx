@@ -1,11 +1,12 @@
 import React from "react";
 
 import Topbar from "./components/Topbar";
-
 import Filters from "./components/Filters";
+import Contacts from "./components/Contacts";
 
 import Container from "./components/Container";
 import { ReactComponent as LogoSvg } from "./assets/img/logo.svg";
+import data from "./data/contacts.json";
 
 import "./App.scss";
 
@@ -22,6 +23,28 @@ class App extends React.Component {
             searchBar={true}
             filtersData={[
               "Nome",
+              "País",
+              "Empresa",
+              "Departamento",
+              "Data de admissão",
+            ]}
+          />
+        </Container>
+
+        <Container>
+          <Contacts
+            data={data}
+            showInfos={[
+              "avatar",
+              "name",
+              "phone",
+              "country",
+              "admissionDate",
+              "company",
+              "department",
+            ]}
+            columnsData={[
+              "Nome",
               "Telefone",
               "País",
               "Admissão",
@@ -29,20 +52,6 @@ class App extends React.Component {
               "Departamento",
             ]}
           />
-        </Container>
-
-        <Container>
-          <section className="contacts">
-            <article className="contact">
-              <span className="contact__avatar" />
-              <span className="contact__data">Nome</span>
-              <span className="contact__data">Telefone</span>
-              <span className="contact__data">País</span>
-              <span className="contact__data">Admissão</span>
-              <span className="contact__data">Empresa</span>
-              <span className="contact__data">Departamento</span>
-            </article>
-          </section>
         </Container>
       </React.Fragment>
     );
