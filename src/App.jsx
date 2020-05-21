@@ -54,7 +54,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
+      <div className='container' data-testid='app'>
         <Topbar />
         <Filters
           selectedOrder={this.state.selectedOrder}
@@ -62,7 +62,7 @@ class App extends React.Component {
           handleChangeSearchbarText={this.handleChangeSearchbarText}
         />
         <Contacts data={this.state.filteredContacts} />
-      </React.Fragment>
+      </div>
     );
   }
 }

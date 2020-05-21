@@ -5,14 +5,26 @@ class Contact extends React.Component {
     return (
       <article className='contact' data-testid='contact'>
         <span className='contact__avatar'>
-          <img src={data.avatar}></img>
+          <img src={data.avatar} alt='avatar'></img>
         </span>
-        <span className='contact__data'>{data.name}</span>
-        <span className='contact__data'>{data.phone}</span>
-        <span className='contact__data'>{data.country}</span>
-        <span className='contact__data'>{data.admissionDate}</span>
-        <span className='contact__data'>{data.company}</span>
-        <span className='contact__data'>{data.department}</span>
+        <span className='contact__data' data-testid='contact-name'>
+          {data.name}
+        </span>
+        <span className='contact__data' data-testid='contact-phone'>
+          {data.phone}
+        </span>
+        <span className='contact__data' data-testid='contact-country'>
+          {data.country}
+        </span>
+        <span className='contact__data' data-testid='contact-date'>
+          {new Date(data.admissionDate)?.toLocaleDateString("pt-Br")}
+        </span>
+        <span className='contact__data' data-testid='contact-company'>
+          {data.company}
+        </span>
+        <span className='contact__data' data-testid='contact-department'>
+          {data.department}
+        </span>
       </article>
     );
   }
