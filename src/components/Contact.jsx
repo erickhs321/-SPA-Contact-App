@@ -17,7 +17,7 @@ class Contact extends React.Component {
           {data.country}
         </span>
         <span className='contact__data' data-testid='contact-date'>
-          {new Date(data.admissionDate)?.toLocaleDateString("pt-Br")}
+          {data.admissionDate}
         </span>
         <span className='contact__data' data-testid='contact-company'>
           {data.company}

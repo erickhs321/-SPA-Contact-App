@@ -15,6 +15,7 @@ class App extends React.Component {
       selectedOrder: "name",
     };
   }
+
   async componentDidMount() {
     await fetch("https://5e82ac6c78337f00160ae496.mockapi.io/api/v1/contacts")
       .then((res) => {
@@ -22,7 +23,16 @@ class App extends React.Component {
         return res.json();
       })
       .then((data) => {
-        this.setState({ contacts: data });
+        const contacts = data.map((contact) => {
+          return {
+            ...contact,
+            admissionDate: new Date(contact.admissionDate).toLocaleDateString(
+              "pt-BR"
+            ),
+          };
+        });
+
+        this.setState({ contacts });
         this.filterByName("");
         this.orderBy(this.state.selectedOrder);
       })
@@ -54,7 +64,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className='container' data-testid='app'>
+      <div className='app' data-testid='app'>
         <Topbar />
         <Filters
           selectedOrder={this.state.selectedOrder}
