@@ -1,29 +1,39 @@
 import React from "react";
+import dayjs from "dayjs";
 class Contact extends React.Component {
   render() {
-    const { data } = this.props;
+    const {
+      avatar,
+      name,
+      phone,
+      country,
+      company,
+      admissionDate,
+      department,
+    } = this.props.data;
+
     return (
       <article className='contact' data-testid='contact'>
         <span className='contact__avatar'>
-          <img src={data.avatar} alt='avatar'></img>
+          <img src={avatar} alt='avatar'></img>
         </span>
         <span className='contact__data' data-testid='contact-name'>
-          {data.name}
+          {name}
         </span>
         <span className='contact__data' data-testid='contact-phone'>
-          {data.phone}
+          {phone}
         </span>
         <span className='contact__data' data-testid='contact-country'>
-          {data.country}
+          {country}
         </span>
         <span className='contact__data' data-testid='contact-date'>
-          {data.admissionDate}
+          {dayjs(admissionDate).format("DD/MM/YYYY")}
         </span>
         <span className='contact__data' data-testid='contact-company'>
-          {data.company}
+          {company}
         </span>
         <span className='contact__data' data-testid='contact-department'>
-          {data.department}
+          {department}
         </span>
       </article>
     );

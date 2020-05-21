@@ -3,6 +3,7 @@ import React from "react";
 import Topbar from "./components/Topbar";
 import Filters from "./components/Filters";
 import Contacts from "./components/Contacts";
+// import mockContactsList from "./__tests__/mock/contacts";
 
 import "./App.scss";
 
@@ -23,20 +24,13 @@ class App extends React.Component {
         return res.json();
       })
       .then((data) => {
-        const contacts = data.map((contact) => {
-          return {
-            ...contact,
-            admissionDate: new Date(contact.admissionDate).toLocaleDateString(
-              "pt-BR"
-            ),
-          };
-        });
-
-        this.setState({ contacts });
-        this.filterByName("");
-        this.orderBy(this.state.selectedOrder);
+        this.setState({ contacts: data });
       })
       .catch((err) => console.log(err));
+
+    // await this.setState({ contacts: mockContactsList });
+    this.filterByName("");
+    this.orderBy(this.state.selectedOrder);
   }
 
   orderBy = (property) => {

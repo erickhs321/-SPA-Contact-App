@@ -3,7 +3,6 @@ import Contact from "./Contact";
 
 class Contacts extends React.Component {
   render() {
-    const { data = [] } = this.props;
     return (
       <div className='container' data-testid='contacts'>
         <section className='contacts'>
@@ -16,7 +15,7 @@ class Contacts extends React.Component {
             <span className='contact__data'>Empresa</span>
             <span className='contact__data'>Departamento</span>
           </article>
-          {data?.map((contact) => {
+          {this.props.data?.map((contact, index) => {
             return <Contact key={contact.id} data={contact} />;
           })}
         </section>
